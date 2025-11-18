@@ -1,0 +1,92 @@
+
+@font-face {
+    font-family:'tipografia' ;
+    src: url(fonte/Simply\ Olive\ DEMO.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('./img/fotoFundoi.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bloco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 48px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 180px 560px 560px;
+    height: 100%;
+    max-width: 100%;
+    width: 250px;
+}
+
+.inicio-login{
+    font-size: 35px;
+    text-align: center;
+    font-family: 'tipografia';
+}
+
+form {
+    display: grid;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+.input-estilo {
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+    font-family: 'tipografia';
+    font-size: 20px;
+    padding: 0px 0px 0px 7px;
+}
+
+img {
+    width: 15px;
+    height: 15px;
+}
+
+.imagem-usuario {
+    width: 50px;
+    height: 50px;
+}
+
+.imagem-email {
+    justify-content: space-between;
+}
+
+button {
+    font-size: 20px;
+    font-family: 'tipografia';
+    text-align: center;
+    width: 100px;
+    border-radius: 32px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    color: rgb(88, 86, 86);
+}
+
+/* .lembrar {
+    display: flex;
+    font-family: 'tipografia';
+} */

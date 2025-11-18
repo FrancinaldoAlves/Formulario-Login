@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bloco">
+        <form>
+
+            <div class= "inicio-login">
+                <img class="imagem-usuario" src="img/usuario.png" alt="Ícone usuário">
+                <h3 id = "Titulo-login" style="color: white;">Login</h3>
+            </div>
+
+            <div class = "email"> 
+                <input class="input-estilo" id ="email" type="text" placeholder="Digite seu email...">
+                <img src="img/email.png" alt="Ícone do email">
+            </div>
+
+            <div class= "senha">
+                <input class="input-estilo" id ="senha" type="text" placeholder="Digite sua senha...">
+                <img src="img/senha.png" alt="Ìcone de cadeado">
+            </div>
+
+            <div>
+                <button id = "botao" onclick="entrar()">Login</button>
+            </div>
+
+            <!-- <div class="lembrar">
+                <input type="checkbox" >
+                Lembrar minha senha
+                <span>Esqueci minha senha</span>
+            </div> -->
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
