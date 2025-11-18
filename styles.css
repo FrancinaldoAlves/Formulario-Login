@@ -83,7 +83,14 @@ button {
     border-radius: 32px;
     border: none;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    color: rgb(88, 86, 86);
+    color: #585656;
+}
+
+.mensagem-estilo {
+    font-family: 'tipografia';
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 0.5rem;
 }
 
 /* .lembrar {
