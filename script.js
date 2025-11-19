@@ -1,15 +1,18 @@
-
 let email = document.getElementById("email");
 let senha = document.getElementById("senha");
 let botao = document.getElementById("botao");
 let mensagem = document.getElementById("mensagem");
 
 
-let letrasMaiusculas = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-let numeros = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-let especiais = [ "!", "@", "_", "$", "%", "&", "*", ".", "/","#", "?" ];
+// let letrasMaiusculas = /[A-Z]/.test(senha.value);
+// let numeros = /[0-9]/.test(senha.value);
+// let especiais = /[!@$%&*\.\/#?]/.test(senha.value);
 
 function validar(){
+    let letrasMaiusculas = /[A-Z]/.test(senha.value);
+    let numeros = /[0-9]/.test(senha.value);
+    let especiais = /[!@$%&*\.\/#?]/.test(senha.value);
+
     if(email.value.length === 0 || senha.value.length === 0){
         mensagem.style.color = 'red';
         mensagem.style.backgroundColor = '#eee0e0ff';
@@ -22,7 +25,7 @@ function validar(){
         mensagem.style.color = 'red';
         mensagem.style.backgroundColor = '#eee0e0ff';
         mensagem.innerHTML = "A senha deve ter o minímo de 6 caracteres";
-    } else if (!senha.value in letrasMaiusculas || !senha.value in numeros || !senha.value in especiais){
+    } else if (!letrasMaiusculas || !numeros || !especiais){
         mensagem.style.color = 'red';
         mensagem.style.backgroundColor = '#eee0e0ff';
         mensagem.innerHTML = "A senha deve conter um caractere maisculo, especial e um número!";
@@ -31,11 +34,10 @@ function validar(){
         mensagem.style.color = 'green';
         mensagem.style.backgroundColor = '#eee0e0ff';
         mensagem.innerHTML = "Login valido!";
-        botao.innerText = "Carregando...";
+        botao.style.fontSize = '15px';
+        botao.innerText= "Carregando...";
         botao.style.color = "green";
     }
 }
 
-
-//botao.style.transition = "all 0.2s ease-out";
 //window.location.href = "https://www.flamengo.com.br/";

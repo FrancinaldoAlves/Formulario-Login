@@ -1,7 +1,7 @@
 
 @font-face {
     font-family:'tipografia' ;
-    src: url(fonte/Simply\ Olive\ DEMO.ttf);
+    src: url(fonte/Ubuntu-Regular.ttf);
 }
 
 * {
@@ -40,7 +40,7 @@ body {
 }
 
 .inicio-login{
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
     font-family: 'tipografia';
 }
@@ -57,7 +57,7 @@ form {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     background-color: rgba(255, 255, 255, 0.5);
     font-family: 'tipografia';
-    font-size: 20px;
+    font-size: 16px;
     padding: 0px 0px 0px 7px;
 }
 
@@ -91,11 +91,5 @@ button {
     margin-top: 10px;
     padding: 5px;
     border-radius: 0.5rem;
+    font-size: 15px;
 }
-
-/* .lembrar {
-    display: flex;
-    font-family: 'tipografia';
-} */
-
-/* TESTE */
