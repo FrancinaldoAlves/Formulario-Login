@@ -38,7 +38,6 @@ function validar(){
         mensagem.innerHTML = "Login valido!";
         botao.style.fontSize = '15px';
         botao.innerText= "Carregando...";
-        // botao.style.color = "green";
         window.location.href = "https://github.com/FrancinaldoAlves/Formulario-Login";
     }
 }
