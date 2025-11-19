@@ -1,4 +1,3 @@
-
 @font-face {
     font-family:'tipografia' ;
     src: url(fonte/Ubuntu-Regular.ttf);
@@ -69,10 +68,6 @@ img {
 .imagem-usuario {
     width: 50px;
     height: 50px;
-}
-
-.imagem-email {
-    justify-content: space-between;
 }
 
 button {
